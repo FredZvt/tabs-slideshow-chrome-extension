@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tabs SlideShow Options</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="../">Tabs SlideShow</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="page-header">
+            <h1><img src="../engine/imgs/logo/logo_48.png" /> Tabs SlideShow <a href="http://www.linkedin.com/in/fredericozveiter" target="_blank">by FredZvt</a></h1>
+            <h4>Alternate the browser tabs like a slideshow</h4>
+        </div>
+        <div class="row">
+            <div class="span10 offset1">
+                <form class="form-horizontal well">
+                    <fieldset>
+                        <legend>Default configuration</legend>
+                        <div class="control-group">
+                            <label class="control-label" for="txtDisplayTime">Tab display time:</label>
+                            <div class="controls">
+                                <div class="input-append">
+                                    <input class="span1" id="txtDisplayTime" type="text" />
+                                    <span class="add-on">seconds</span>
+                                </div>
+                                <p class="help-block">Defines the time a tab is displayed before passing to the next.</p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="chkAutoReload">Auto reload:</label>
+                            <div class="controls">
+                                <label class="checkbox">
+                                    <input type="checkbox" id="chkAutoReload" value="option1" />
+                                    Defines if a tab should be reloaded when it is displayed.
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Custom tabs configuration</legend>
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th class="cell_tab">Tab</th>
+                                    <th class="centered cell_time">Time</th>
+                                    <th class="centered cell_reload">Reload</th>
+                                    <th class="centered cell_options">Options</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabsTable">
+                            </tbody>
+                        </table>
+                    </fieldset>
+                    <div class="form-buttons">
+                        <button type="button" class="btn btn-primary" id="btnSave">Save Changes</button>
+                    </div>
+                    <div id="save_alert" class="alert alert-success" style="display: none">
+                        <button type="button" class="close" id="btnCloseSaveAlert">×</button>
+                        <strong>Well done!</strong> The configurations were saved.
+                    </div>
+                    <div id="save_validation_alert" class="alert alert-error" style="display: none">
+                        <button type="button" class="close" id="btnCloseSaveValidationAlert">×</button>
+                        <strong>Oh no!</strong> Look for the items highlighted in red.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/jquery-1.8.2.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/page.js"></script>
+</body>
+</html>

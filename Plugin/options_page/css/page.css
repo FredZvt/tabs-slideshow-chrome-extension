@@ -1,0 +1,54 @@
+﻿
+body
+{
+    padding-top: 40px;
+}
+
+.table td.centered, .table th.centered
+{
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table td.cell_tab, .table th.cell_tab
+{
+    white-space: nowrap;
+}
+
+.table td.cell_time, .table th.cell_time
+{
+    width: 30px;
+}
+
+.table td.cell_reload, .table th.cell_reload
+{
+    width: 30px;
+}
+
+.table td.cell_options, .table th.cell_options
+{
+    width: 30px;
+}
+
+    .table td.cell_options a.btn
+    {
+        width: 80px;
+    }
+
+input.error
+{
+    color: #C00;
+    border-color: #C00;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.form-buttons
+{
+    text-align: right;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #E5E5E5;
+}
+
