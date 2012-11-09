@@ -3,7 +3,7 @@
 	"minimum_chrome_version": "22",
 
 	"name": "Tabs SlideShow by FredZvt",
-	"version": "1.0.3",
+	"version": "1.0.5",
 	"description": "Alternate the browser tabs like a slideshow.",
 	"icons": {	
 		"16": "engine/imgs/logo/logo_16.png",
@@ -20,7 +20,7 @@
 	},
 
 	"background": {
-		"persistent": false,
+		"persistent": true,
 		"page": "program.html"
 	}
 }
